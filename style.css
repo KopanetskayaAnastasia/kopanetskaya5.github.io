@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(160, 227, 179);
+}
+input{
+    background-color: rgb(177, 251, 184);
+}
+button {
+    background-color: rgb(25, 206, 46);
+}
+header,footer{
+    color:rgb(1, 43, 0);
+    font: 45px arial italic;
+    text-align: center;
+    border: 2px outset rgb(1, 75, 0);
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+}

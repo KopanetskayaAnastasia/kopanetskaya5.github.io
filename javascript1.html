@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang=ru>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        
+        <script src="calculator.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <title>Задание 5</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h1>Музыкальные инструменты</h1>
+        </header>
+        <div class="container-fluid">
+            <h2>Корзина:</h2>
+            <form name="calculator" onsubmit="return false;">
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        <b>Наименование</b>
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <b>Цена в рублях</b>
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <b>Количество</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Фортепиано
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="price" type="text" value="10000">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="count" type="text" value="0">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Скрипка
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="price0" type="text" value="20000">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="count0" type="text" value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Гитара
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="price1" type="text" value="30000">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="count1" type="text" value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Саксофон
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="price2" type="text" value="40000">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="count2" type="text" value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Аккордеон
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="price3" type="text" value="50000">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="count3" type="text" value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Домра
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="price4" type="text" value="60000">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="count4" type="text" value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Рояль
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="price5" type="text" value="70000">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="count5" type="text" value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Синтезатор
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="price6" type="text" value="80000">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="count6" type="text" value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Альт
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="price7" type="text" value="90000">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="count7" type="text" value="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 col-lg-3">
+                        Баян
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="price8" type="text" value="100000">
+                    </div>
+                    <div class="col-3 col-lg-2">
+                        <input name="count8" type="text" value="0">
+                    </div>
+                </div>
+                <button onclick="calc();">Рассчитать</button>
+                
+            </form>
+            <div class="pt-2" id="result"></div>
+            <div class="col-sm-12 text-center p-1 order-md-5 mx-auto">
+                <footer>
+                    ©Kopanetskaya Anastasia 2022
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
