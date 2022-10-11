@@ -3,6 +3,7 @@ body{
 }
 input{
     background-color: rgb(177, 251, 184);
+    width:65px;
 }
 button {
     background-color: rgb(25, 206, 46);
