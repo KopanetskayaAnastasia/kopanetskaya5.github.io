@@ -22,6 +22,12 @@ function calc() {
     let a8 = form.elements.price8;
     let b8 = form.elements.count8;
     let result = document.getElementById("result");
+    const regul=/^[1-9][0-9]*$/;
+    for(let i=0;i<n;i++){
+        let count=form.elements['count' + i].value;
+       if (!price.match(regul))
+           result.innerHTML = "Сотри и напиши нормально";
+    }
     let r = a.value * b.value + a0.value * b0.value + a1.value * b1.value + a2.value * b2.value + a3.value * b3.value + a4.value * b4.value + a5.value * b5.value + a6.value * b6.value + a7.value * b7.value + a8.value * b8.value;
     if(isNaN(r)) {
         result.innerHTML = "Введены были не числа";
