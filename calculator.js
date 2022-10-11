@@ -23,18 +23,17 @@ function calc() {
     let b8 = form.elements.count8;
     let result = document.getElementById("result");
     const regul=/^[1-9][0-9]*$/;
+    let r=0;
     for(let i=0;i<n;i++){
+        let price=form.elements['price'+i].value;
         let count=form.elements['count' + i].value;
-       if (!price.match(regul))
+        if (!price.match(regul)){
            result.innerHTML = "Сотри и напиши нормально";
+           break;
+       }
+        r+=form.elements['price'+i].value*form.elements['count' + i].value;
     }
-    let r = a.value * b.value + a0.value * b0.value + a1.value * b1.value + a2.value * b2.value + a3.value * b3.value + a4.value * b4.value + a5.value * b5.value + a6.value * b6.value + a7.value * b7.value + a8.value * b8.value;
-    if(isNaN(r)) {
-        result.innerHTML = "Введены были не числа";
-    }
-    else {
-        result.innerHTML ="Ваш заказ стоит: " + r + " рублей";
-    }
+    result.innerHTML ="Ваш заказ стоит: " + r + " рублей";
 }
 window.addEventListener("DOMContentLoaded", function (event) {
   console.log("DOM fully loaded and parsed");
